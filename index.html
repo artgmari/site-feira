@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira Tecnológica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Feira Tecnológica</h1>
+    </header>
+    <main>
+        <section id="mesas">
+            <h2>Mesas</h2>
+            <ul id="lista-mesas">
+                <!-- Mesas serão carregadas aqui -->
+            </ul>
+            <button id="adicionar-mesa">Adicionar Mesa</button>
+        </section>
+        <section id="detalhes-mesa">
+            <h2>Detalhes da Mesa</h2>
+            <div id="mesa-info">
+                <label for="mesa-nome">Nome da Mesa:</label>
+                <input type="text" id="mesa-nome">
+                <h4>Participantes</h4>
+                <ul id="mesa-participantes"></ul>
+                <input type="text" id="novo-participante" placeholder="Adicionar Participante">
+                <button id="adicionar-participante">Adicionar Participante</button>
+                
+                <h4>Perguntas</h4>
+                <ul id="mesa-perguntas"></ul>
+                <input type="text" id="nova-pergunta" placeholder="Adicionar Pergunta">
+                <button id="adicionar-pergunta">Adicionar Pergunta</button>
+                <label for="nota">Nota:</label>
+                <select id="nota">
+                    <option value="I">I - Inferior</option>
+                    <option value="R">R - Regular</option>
+                    <option value="B">B - Bom</option>
+                    <option value="MB">MB - Muito Bom</option>
+                </select>
+                <button id="enviar-nota">Enviar Nota</button>
+                <button id="salvar-mesa">Salvar Mesa</button>
+                <button id="remover-mesa">Remover Mesa</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Feira Tecnológica</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
